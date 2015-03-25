@@ -1,3 +1,13 @@
 = RailsBloggerEngine
 
 This project rocks and uses MIT-LICENSE.
+
+1. Add gem ‘rails_blogger_migration' to your gem file
+
+2. Run Bundle Install
+
+3. Add mount RailsBloggerEngine::Engine, at: "/blog”  to your routes files
+
+4. Run rake rails_blogger_engine:install:migrations
+
+5. Run rake db:migrate
