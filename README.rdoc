@@ -1,3 +1,4 @@
+{<img src="https://badge.fury.io/rb/rails_blogger_engine.svg" alt="Gem Version" />}[http://badge.fury.io/rb/rails_blogger_engine]
 = RailsBloggerEngine
 
 This project rocks and uses MIT-LICENSE.
