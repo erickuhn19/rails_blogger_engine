@@ -2,7 +2,7 @@ module RailsBloggerEngine
   class Article < ActiveRecord::Base
     has_many :comments
 
-    attr_accessor :author_name
+    attr_accessor :author_class 
     belongs_to :author, class_name: RailsBloggerEngine.author_class.to_s
  
     before_save :set_author
