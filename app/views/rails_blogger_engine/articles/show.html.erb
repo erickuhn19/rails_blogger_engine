@@ -1,8 +1,5 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <b>Author:</b>
-  <%= @article.author %>
-</p>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -18,4 +15,5 @@
 <%= render "rails_blogger_engine/comments/form" %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
+<%= button_to "Delete", @article, :method=>:delete, data: { confirm: 'Are you sure?' }, :class=>:destroy %>
 <%= link_to 'Back', articles_path %>

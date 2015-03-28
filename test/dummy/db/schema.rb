@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325022747) do
+ActiveRecord::Schema.define(version: 20150328181752) do
 
   create_table "rails_blogger_engine_articles", force: :cascade do |t|
     t.string   "title"
