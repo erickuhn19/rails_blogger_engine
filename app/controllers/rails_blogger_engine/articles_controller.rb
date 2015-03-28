@@ -6,11 +6,12 @@ module RailsBloggerEngine
 
     # GET /articles
     def index
-      @articles = Article.all
+      @articles = Article.all.order('created_at DESC')
     end
 
     # GET /articles/1
     def show
+      @article = Article.find(params[:id])
     end
 
     # GET /articles/new
@@ -44,6 +45,7 @@ module RailsBloggerEngine
 
     # DELETE /articles/1
     def destroy
+      @article = Article.find(params[:id])
       @article.destroy
       redirect_to articles_url, notice: 'Article was successfully destroyed.'
     end
@@ -56,7 +58,7 @@ module RailsBloggerEngine
 
       # Only allow a trusted parameter "white list" through.
       def article_params
-        params.require(:article).permit(:title, :text, :author_name)
+        params.require(:article).permit(:title, :text)
       end
   end
 end
