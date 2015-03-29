@@ -6,7 +6,7 @@ This project rocks and uses MIT-LICENSE.
 
 Add this line to your gem file
 ```ruby
-gem ‘rails_blogger_engine' 
+gem 'rails_blogger_engine' , '1.0.0' 
 ```
 Run this command on the command line
 ```ruby
