@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325022747) do
+ActiveRecord::Schema.define(version: 20150329023639) do
 
   create_table "rails_blogger_engine_articles", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "author_id"
   end
 
   create_table "rails_blogger_engine_comments", force: :cascade do |t|
