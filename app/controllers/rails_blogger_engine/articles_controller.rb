@@ -45,10 +45,11 @@ module RailsBloggerEngine
 
     # DELETE /articles/1
     def destroy
-      @article = Article.find(params[:id])
-      @article.destroy
-      redirect_to articles_url, notice: 'Article was successfully destroyed.'
+    @article.destroy
+    respond_to do |format|
+      format.html { redirect_to root_path, notice: 'Article was successfully destroyed.' }
     end
+  end
 
     private
       # Use callbacks to share common setup or constraints between actions.
